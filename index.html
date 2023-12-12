@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantinho Nordestino</title>
+    <link rel="icon" href="./img/Logo/Logo_1.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_cabecalho.css">
+    <link rel="stylesheet" href="./css/style_login.css">
+    <link rel="stylesheet" href="./css/style_index.css">
+    <link rel="stylesheet" href="./css/style_rodape.css">
+
+    <!-- adiconado para poder criar os ícones das redes sociais no rodapé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- adiconado para poder criar os ícones do cabeçalho responsivo -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="./js/carrosel.js" defer></script>
+    <script src="./js/login.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <img src="./img/Logo/Logo_1.JPG" alt="Logo Restaurante" id="logo">
+
+        <input type="checkbox" name="check-nav" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#" class="link-nav">Home</a>
+            <a href="quem_somos.html" class="link-nav">Quem Somos</a>
+            <a href="menu.html" class="link-nav">Menu / Delivery</a>
+            <a href="reservas.html" class="link-nav">Reservas</a>
+            <a href="gift.html" class="link-nav">Gift Card</a>
+            <a href="local.html" class="link-nav">Localização</a>
+            <a href="fale_conosco.html" class="link-nav">Fale
+                Conosco</a>
+            <button class="btn-cadastro">Cadastre-se</button>
+            <button class="btn-login">Log in</button>
+        </nav>
+
+    </header>
+
+
+    <section class="wrapper-form-login">
+        <div class="wrapper-son">
+            <span class="icone-fechar"><ion-icon name="close"></ion-icon></span>
+            <div class="form-box-login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Senha</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label><input type="checkbox"> Lembrar-me</label>
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+                    <button class="btn_submit">Login</button>
+                    <div class="login-cadastro">
+                        <p>Novo por aqui? <a href="#" class="cadastro-link">Cadastre-se</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box-cadastro">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icone"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="lembrar-esquecer">
+                        <label class="cadastro-label"><input type="checkbox"> Concordo com os termos e condições</label>
+                    </div>
+                    <button class="btn_submit">Register</button>
+                    <div class="login-cadastro">
+                        <p>Você já tem uma conta? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <main class="main">
+
+        <div class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="img/Home/Bolo_de_Rolo.webp" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/Home/Peixada.png" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/Home/bobo2.jpg" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/Home/acaraje.webp" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/Home/tapioca2.jpg" alt="img" draggable="false"></div>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="img/Home/pacoca_carne.jpeg" alt="img" draggable="false"></div>
+                </li>
+            </ul>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <div class="circle">
+            ''Restaurante Cantinho Nordestino
+        </div>
+        <div class="content">
+            <div>Menu</div>
+            <div>Cantinho Nordestino</div>
+            <a href="menu.html"><button>Veja Mais</button></a>
+
+        </div>
+
+
+
+        <div class="bem-vindo" id="home">
+            <img src="./img/Home/restaurante.webp" alt="restaurante" class="img-bem-vindo">
+            <div class="texto-bem-vindo">
+                <h2 class="titulo-bem-vindo">Bem vindo ao <br>Cantinho Nordestino</h2>
+                <p class="paragrafo-bem-vindo">Texto aqui de boas vindas, falando bem
+                    do restauante e etc.
+                    <br>
+                    blablablablablablabla, com o
+                    chefs
+                    especializados na culinaria nordestina
+                    <br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <br>
+                    Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s.
+                </p>
+                <a href="quem_somos.html"><button class="btn-quem">Quem Somos</button></a>
+                <a href="reservas.html"><button class="btn-reserve">Reserve uma Mesa</button></a>
+            </div>
+        </div>
+
+        <div class="prep-melhor">
+            <div class="texto-prep-melhor">
+                <h2 class="titulo-prep-melhor">
+                    Preparamos a melhor
+                    <br>
+                    comida para você
+                </h2>
+                <p class="paragrafo-prep-melhor">
+                    Texto aqui sobre como nos dedicamos para fazer a comida com muito
+                    <br>
+                    amor e carinho blablablabla, com o chefs especializados na culinaria nordestina
+                    <br>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    <br>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                </p>
+                <a href="menu.html"><button class="btn-menu">Menu / Delivery</button></a>
+                <!-- <a href="menu.html"><button class="btn-pedidos">Delivery</button></a> -->
+            </div>
+            <img src="./img/Home/comidas_nordestinas.webp" alt="comidas_nordestinas" class="img-prep-melhor">
+        </div>
+
+        <div class="cadastro-login">
+            <div class="cadastro">
+                <h2 class="titulo-cadastro">
+                    Cadastra-se e receba seus
+                    <br>
+                    pedidos em casa
+                </h2>
+                <button class="btn-cadastro-main">Cadastre-se</button>
+            </div>
+            <div class="login">
+                <h2 class="titulo-login">
+                    Já é cadastrado? Faça o login e peça
+                    <br>
+                    seus pratos favoritos.
+                </h2>
+                <button class="btn-login-main">Login</button>
+            </div>
+        </div>
+
+        <div class="gift-card">
+            <h2 class="titulo-gift">
+                Presentei quem você gosta com
+                <br>
+                nosso vale presente
+            </h2>
+            <div class="gift-flex">
+                <img src="./img/Home/gift_card1.jpg" alt="imagem-caixas-presentes-escura" class="img-gift1">
+                <a href="gift.html"><button class="btn-gift">Gift Card</button></a>
+                <img src="./img/Home/gift_card2.jpg" alt="imagem-caixa-presente-rosa" class="img-gift2">
+            </div>
+        </div>
+
+
+        <footer class="rodape">
+            <div class="flex-rodape">
+
+                <div class="contato-rodape">
+                    <h3 class="contato">Entre em contato</h3>
+                    <br>
+                    <a class="tel" href="tel:+558435555555">
+                        +55 (84) 3555-5555
+                    </a>
+                    <br>
+                    <br>
+                    <a class="email" href="mailto:contato@cantinhonordestino.com.br">
+                        contato@cantinhonordestino.com.br
+                    </a>
+
+                </div>
+
+                <div class="nav-rodape">
+
+                    <h3>Navegação</h3>
+
+                    <div class="nav-rodape-coluna">
+
+                        <div class="nav-rodape-left">
+                            <a href="#" class="link_nav_footer">Home</a>
+                            <a href="quem_somos.html" class="link_nav_footer">Quem Somos</a>
+                            <a href="menu.html" class="link_nav_footer">Menu</a>
+                            <a href="menu.html" class="link_nav_footer">Delivery</a>
+                        </div>
+
+                        <div class="nav-rodape-right">
+                            <a href="reservas.html" class="link_nav_footer">Reservas</a>
+                            <a href="gift.html" class="link_nav_footer">Gift Card</a>
+                            <a href="local.html" class="link_nav_footer">Localização</a>
+                            <a href="fale_conosco.html" class="link_nav_footer">Fale Conosco</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="siga-rodape">
+                    <h3 class="siga">Siga-nos</h3>
+                    <a class="facebook" href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a class="twitter" href="https://twitter.com/" target="_blank">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="instagram" href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+
+            </div>
+
+
+        </footer>
+
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

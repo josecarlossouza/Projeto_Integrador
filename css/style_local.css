@@ -1,0 +1,121 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+
+button {
+    cursor: pointer;
+    border-radius: 15px 4px 15px 4px;
+    border: none;
+    font-weight: 600;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 241, 237);
+}
+
+h3,
+h4 {
+    font-size: 2.8rem;
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    font-size: 2.4rem;
+
+}
+
+.rodape h3 {
+    text-align: left;
+}
+
+
+@media (max-width: 650px) {
+    .mapa {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    main h1 {
+        margin-left: 5rem;
+    }
+
+    main h4 {
+        margin-left: 5rem;
+    }
+
+    .mapa {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    main h1 {
+        margin-left: 15rem;
+    }
+
+    main h4 {
+        margin-left: 15rem;
+    }
+
+    main h3 {
+        margin-left: 15rem;
+    }
+
+    .mapa {
+        margin-left: 15rem;
+    }
+}
+
+
+
+@keyframes pulse {
+    0% {
+        outline-offset: .3rem;
+        opacity: 1;
+    }
+
+    100% {
+        outline-offset: 1.5rem;
+        opacity: 0;
+    }
+}

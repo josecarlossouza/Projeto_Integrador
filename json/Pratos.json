@@ -1,0 +1,170 @@
+[
+	{
+		"id": 1,
+		"nome": "Tapioca",
+		"descricao": "A Tapioca é uma ótima opção para quem procura um alimento saudável, versátil e com baixo índice glicêmico",
+		"preco": 7,
+		"imagem": "../img/Menu/Queridinhos/Tapioca.jpg"
+	},
+	{
+		"id": 2,
+		"nome": "Bolo de Rolo",
+		"descricao": "Semelhante ao de um rocambole, mas com camadas ainda mais finas e delicadas e recheio de goiabada",
+		"preco": 20,
+		"imagem": "../img/Menu/Queridinhos/Bolo_de_Rolo.webp"
+	},
+	{
+		"id": 3,
+		"nome": "Caranguejada",
+		"descricao": "Feito com caranguejos cozidos em molho preparado com leite de coco, azeite e temperos verdes",
+		"preco": 34,
+		"imagem": "../img/Menu/Queridinhos/Caranguejo.webp"
+	},
+	{
+		"id": 4,
+		"nome": "Peixada",
+		"descricao": "Ensopado de filé de peixe, tomate, cebola, coentro, pimentões, leite de coco, batatas e cenouras.",
+		"preco": 28,
+		"imagem": "../img/Menu/Queridinhos/Peixada.png"
+	},
+	{
+		"id": 5,
+		"nome": "Acarajé",
+		"descricao": "Bolinho feito de massa de feijão-fradinho, cebola e sal, e frito em azeite de dendê.",
+		"preco": 10,
+		"imagem": "../img/Menu/Petiscos/acaraje.webp"
+	},
+	{
+		"id": 6,
+		"nome": "Carne de Sol",
+		"descricao": "Acompanha baião de dois, farofa de ovos, macaxeira frita, queijo coalho e vinagrete.",
+		"preco": 25,
+		"imagem": "../img/Menu/Petiscos/Carne_de_Sol.jpeg"
+	},
+	{
+		"id": 7,
+		"nome": "Casquinho de Caranguejo",
+		"descricao": "Carne de caranguejo refogada com cheiro-verde, tomate e leite de coco. Acompanha farofa da Bahia e molho de coco.",
+		"preco": 30,
+		"imagem": "../img/Menu/Petiscos/Casquinha.jpeg"
+	},
+	{
+		"id": 8,
+		"nome": "Escondidinho de Charque",
+		"descricao": "Camadas alternadas de purê de mandioca (ou batata-doce) e carne de charque desfiada e refogada",
+		"preco": 23,
+		"imagem": "../img/Menu/Petiscos/Escondidinho_1.jpeg"
+	},
+	{
+		"id": 9,
+		"nome": "Bode Assado",
+		"descricao": "Assado na chapa, com queijo coalho e cebolas douradas. Acompanha fava, arroz, macaxeira, vinagrete e farofa",
+		"preco": 37,
+		"imagem": "../img/Menu/Carnes/Bode_Assado.jpg"
+	},
+	{
+		"id": 10,
+		"nome": "Buchada de Bode",
+		"descricao": "Vísceras brancas do bode, lavadas, fervidas, cortadas, temperadas e cozidas em bolsas.",
+		"preco": 22,
+		"imagem": "../img/Menu/Carnes/Buchada_de_Bode.jpeg"
+	},
+	{
+		"id": 11,
+		"nome": "Paçoca de Carne",
+		"descricao": "Carne desfiada, refogada na manteiga com cebola roxa, farofa, coentro e cebolinha, coberta com bananas fritas.",
+		"preco": 25,
+		"imagem": "../img/Menu/Carnes/Pacoca_Carne.jpeg"
+	},
+	{
+		"id": 12,
+		"nome": "Sarapatel",
+		"descricao": "Vísceras vermelhas de porco, pedaços de toucinho e da tripa, acrescido de hortelã e pimentas-de-cheiro.",
+		"preco": 18,
+		"imagem": "../img/Menu/Carnes/Sarapatel.jpeg"
+	},
+	{
+		"id": 13,
+		"nome": "Bobó de Camarão",
+		"descricao": "Camarões, azeite de dendê, tomate, cebola, pimentões, purê de macaxeira cozida, coentro e leite de coco.",
+		"preco": 32,
+		"imagem": "../img/Menu/Mar/Bobo.jpg"
+	},
+	{
+		"id": 14,
+		"nome": "Lagosta Grelhada",
+		"descricao": "Lagosta grelhada, alcaparras e salsinha. Acompanha arroz de alho poró ebatatas ao vapor.",
+		"preco": 65,
+		"imagem": "../img/Menu/Mar/Lagosta_Grelhada.jpeg"
+	},
+	{
+		"id": 15,
+		"nome": "Moqueca Cearense Mista",
+		"descricao": "Peixes e Camarões com tomate, cebola, pimentões, pimenta, leite de coco, azeite de dendê e coentro.",
+		"preco": 50,
+		"imagem": "../img/Menu/Mar/Moqueca.png"
+	},
+	{
+		"id": 16,
+		"nome": "Rede de Pescador com Polvo",
+		"descricao": " Polvo, camarão, mexilhões, peixe e lula grelhados com molho provençal.",
+		"preco": 29,
+		"imagem": "../img/Menu/Mar/Polvo.jpeg"
+	},
+	{
+		"id": 17,
+		"nome": "Água de Coco",
+		"descricao": "Bebida leve, refrescante, que contém poucas calorias e diversos nutrientes importantes para o nosso organismo.",
+		"preco": 5,
+		"imagem": "../img/Menu/Bebidas/Agua_de_Coco.webp"
+	},
+	{
+		"id": 18,
+		"nome": "Caipirinhas",
+		"descricao": "Coquetel feito com cachaça, açúcar, gelo e a fruta de sua escolha",
+		"preco": 12,
+		"imagem": "../img/Menu/Bebidas/Caipirinhas.jpeg"
+	},
+	{
+		"id": 19,
+		"nome": "Capuccino",
+		"descricao": "A moda italiana, preparado com café expresso e leite, podendo-se adicionar chocolate em pó",
+		"preco": 7,
+		"imagem": "../img/Menu/Bebidas/Capuccino.jpeg"
+	},
+	{
+		"id": 20,
+		"nome": "Tulipa Chopp",
+		"descricao": "Feito com água, malte, cereais, carboidratos e lúpulo 2. Servido em um lonog copo Tulipa",
+		"preco": 11,
+		"imagem": "../img/Menu/Bebidas/Chopp_Tulipa.webp"
+	},
+	{
+		"id": 21,
+		"nome": "Cartola",
+		"descricao": "Combina a banana frita com manteiga com o sabor salgado do queijo refogado, polvilhado com açúcar e canela.",
+		"preco": 15,
+		"imagem": "../img/Menu/Sobremesas/Cartola.jpeg"
+	},
+	{
+		"id": 22,
+		"nome": "Petit Gateau",
+		"descricao": "Bolinho quente de chocolate ou doce de leite. Acompanha sorvete de creme.",
+		"preco": 12,
+		"imagem": "../img/Menu/Sobremesas/Petit_Gateau.jpeg"
+	},
+	{
+		"id": 23,
+		"nome": "Pudim de Leite",
+		"descricao": "Sobremesa típica portuguesa, com açúcar, leite condensado, ovos e leite",
+		"preco": 7,
+		"imagem": "../img/Menu/Sobremesas/Pudim.jpeg"
+	},
+	{
+		"id": 24,
+		"nome": "Torta de Cocada",
+		"descricao": "Biscoito de chocolate recheado, leite condensado, creme de leite, leite de coco, açucar e coco ralado",
+		"preco": 16,
+		"imagem": "../img/Menu/Sobremesas/Torta_de_Cocada.JPG"
+	}
+]
