@@ -52,6 +52,11 @@ button {
     align-items: center;
 }
 
+.contato-rodape {
+    line-height: 2rem;
+}
+
+
 @media (max-width: 800px) {
 
     .rodape {

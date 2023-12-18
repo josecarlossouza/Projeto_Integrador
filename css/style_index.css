@@ -1,6 +1,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -38,7 +39,6 @@ button {
     max-width: 110rem;
     width: 100%;
     position: relative;
-    margin-left: 10em;
     /* border: solid red 1px; */
 }
 
@@ -63,16 +63,17 @@ button {
 }
 
 .wrapper i:first-child {
-    left: -7.5rem;
+    left: 20.5rem;
 }
 
 .wrapper i:last-child {
-    right: -7.5rem;
+    right: 7.5rem;
 }
 
 .wrapper .carousel {
     display: grid;
     grid-auto-flow: column;
+    /*deixa apenas uma imagem por vez, exibida no grid*/
     grid-auto-columns: calc((100%) - 1.2rem);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -80,6 +81,7 @@ button {
     border-radius: 8px;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    /* border: 2px solid green; */
 }
 
 .carousel::-webkit-scrollbar {
@@ -117,12 +119,15 @@ button {
     border-radius: 8px;
     padding-left: 13%;
     padding-top: 2%;
+    /* border: 2px solid red; */
+
 }
 
 .carousel .card .img {
     min-height: 24.8rem;
     max-width: 24.8rem;
     border-radius: 50%;
+    /* border: 2px solid blue; */
 }
 
 .card .img img {
@@ -135,59 +140,112 @@ button {
 }
 
 
-/* @media screen and (max-width: 90rem) {
 
-    .wrapper {
-        margin-left: 2.5em;
-    }
 
-    .wrapper .carousel {
-        grid-auto-columns: calc((100%) - 0.9rem);
-    }
+/* :root {
+--radius: calc(72vw / 5);
+}*/
 
-    .card .img img {
-        max-width: 30rem;
-        min-height: 30rem;
-    }
+
+.circle {
+
+    pointer-events: none;
+    position: relative;
+    /* top: 21%;
+    left: 3.5%; */
+    width: 200px;
+    height: 200px;
 }
 
-@media screen and (max-width: 60rem) {
 
-    .wrapper {
-        margin-left: 1em;
-    }
+.circle span {
 
-    .wrapper .carousel {
-        grid-auto-columns: 100%;
-    }
+    display: block;
+    /* height: calc(var(--radius) * 3 + 5.5rem); */
+    height: 45rem;
+    position: absolute;
+    top: -127%;
+    left: 307%;
+    --rotate: 50deg;
+    transform: translate(-50%, -50%) rotate(var(--rotate));
+    text-transform: uppercase;
+    color: black;
+    font-size: small;
+    animation: circleRotate 20s linear infinite;
+}
 
-    .card .img img {
-        max-width: 25rem;
-        min-height: 25rem;
-    }
+/*Criado para os spans dos circulos, descer quando o formulário do login aparecer na tela*/
+/* .circle.login span {
+
+    display: block;
+    position: absolute;
+    height: 50rem;
+    top: 150%;
+    left: 50.5%;
+    --rotate: 50deg;
+    transform: translate(-50%, -50%) rotate(var(--rotate));
+    text-transform: uppercase;
+    color: black;
+    font-size: small;
+    animation: circleRotate 20s linear infinite;
+}
+
+/*Criado para os spans dos circulos, descer quando o formulário do cdastro aparecer na tela*/
+/* .circle.cadastro span {
+
+    display: block;
+    position: absolute;
+    height: 50rem;
+    top: 170%;
+    left: 50.5%;
+    --rotate: 50deg;
+    transform: translate(-50%, -50%) rotate(var(--rotate));
+    text-transform: uppercase;
+    color: black;
+    font-size: small;
+    animation: circleRotate 20s linear infinite;
 } */
 
-:root {
-    --width-circle: 50vw;
-    --radius: calc(72vw / 5);
+*/ .circle span:nth-child(-n+13) {
+    color: rgb(107, 106, 106);
+    font-weight: 600;
 }
 
+.circle span:nth-child(n+14):nth-child(-n+22) {
+    color: rgba(254, 129, 14, 1);
+    font-weight: 600;
+}
+
+.circle span:nth-child(n+21) {
+    color: black;
+    font-weight: 800;
+}
+
+@keyframes circleRotate {
+    to {
+        transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
+    }
+}
+
+
+
+
 .content {
-    position: absolute;
-    bottom: 2%;
-    left: 52%;
-    transform: translateX(-50%);
+    position: relative;
+    top: -25rem;
     text-align: center;
     color: black;
     width: max-content;
+    margin-left: 35rem;
+
 }
 
-.content.login {
+/* .content.login {
     position: absolute;
     bottom: 2%;
     top: 142%;
-    left: 52%;
-    transform: translateX(-50%);
+    left: 1800rem;
+    margin-left: 100rem;
     text-align: center;
     color: black;
     width: max-content;
@@ -197,12 +255,12 @@ button {
     position: absolute;
     bottom: 2%;
     top: 154%;
-    left: 52%;
+    left: 152%;
     transform: translateX(-50%);
     text-align: center;
     color: black;
     width: max-content;
-}
+} */
 
 .content div:nth-child(1) {
     text-align: left;
@@ -264,101 +322,9 @@ button {
 }
 
 
-
-
-
-.circle {
-
-    pointer-events: none;
-    position: absolute;
-    top: 21%;
-    left: 3.5%;
-    width: 90%;
-    height: 60%;
-    /* -webkit-mask: radial-gradient(var(--radius), transparent 100%, #000); */
-    /* mask: radial-gradient(var(--radius), #0000 100%, #000); */
-    /* backdrop-filter: blur(10px); */
-    /* background: radial-gradient(calc(var(--radius) + 1px), #eee5 100%, #eee2); */
-
+.wrapper-form-login.active>.content {
+    left: 0;
 }
-
-
-
-
-
-.circle span {
-
-    display: block;
-    position: absolute;
-    height: calc(var(--radius) * 2 + 5.5rem);
-    top: 50%;
-    left: 50.5%;
-    --rotate: 50deg;
-    transform: translate(-50%, -50%) rotate(var(--rotate));
-    text-transform: uppercase;
-    color: black;
-    font-size: small;
-    animation: circleRotate 20s linear infinite;
-}
-
-.circle.login span {
-
-    display: block;
-    position: absolute;
-    height: calc(var(--radius) * 2 + 5.5rem);
-    top: 150%;
-    left: 50.5%;
-    --rotate: 50deg;
-    transform: translate(-50%, -50%) rotate(var(--rotate));
-    text-transform: uppercase;
-    color: black;
-    font-size: small;
-    animation: circleRotate 20s linear infinite;
-}
-
-.circle.cadastro span {
-
-    display: block;
-    position: absolute;
-    height: calc(var(--radius) * 2 + 5.5rem);
-    top: 170%;
-    left: 50.5%;
-    --rotate: 50deg;
-    transform: translate(-50%, -50%) rotate(var(--rotate));
-    text-transform: uppercase;
-    color: black;
-    font-size: small;
-    animation: circleRotate 20s linear infinite;
-}
-
-
-.circle span:nth-child(-n+13) {
-    color: rgb(107, 106, 106);
-    font-weight: 600;
-}
-
-.circle span:nth-child(n+14):nth-child(-n+22) {
-    color: rgba(254, 129, 14, 1);
-    font-weight: 600;
-}
-
-.circle span:nth-child(n+21) {
-    color: black;
-    font-weight: 800;
-}
-
-@keyframes circleRotate {
-    to {
-        transform: translate(-50%, -50%) rotate(calc(var(--rotate) + 360deg));
-    }
-}
-
-
-
-
-
-
-
 
 
 .bem-vindo {
@@ -386,6 +352,7 @@ button {
     text-align: center;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    font-size: 2rem;
 
 }
 
@@ -544,10 +511,12 @@ button {
     text-align: center;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
+    font-size: 2rem;
 
 }
 
 .btn-menu {
+    text-align: center;
     width: 15em;
     height: 4em;
     /* background-color: black; */
@@ -622,9 +591,8 @@ button {
         margin: 0 auto;
     }
 
-    .btn-menu,
-    .btn-pedidos {
-        left: -10%;
+    .btn-menu {
+        left: 0;
     }
 
 }
@@ -641,52 +609,11 @@ button {
 @media (max-width: 500px) {
 
     .btn-menu {
-        width: 8em;
+        /* width: 8em;
         height: 4em;
         margin-left: 13rem;
-        margin-right: 1rem;
-    }
-
-    .btn-pedidos {
-        width: 8em;
-        height: 4em;
-        margin: 2em;
-        top: -1rem;
-    }
-
-}
-
-@media (max-width: 415px) {
-
-    .btn-menu {
-        width: 8em;
-        height: 4em;
-        margin-left: 8rem;
-        margin-right: 0;
-    }
-
-    .btn-pedidos {
-        width: 8em;
-        height: 4em;
-        margin: 2em;
-        top: -1rem;
-    }
-
-}
-
-@media (max-width: 350px) {
-
-    .btn-menu {
-        width: 6em;
-        height: 4em;
-        margin-left: 8rem;
-        margin-right: 0;
-    }
-
-    .btn-pedidos {
-        width: 6em;
-        height: 4em;
-        margin: 2em;
+        margin-right: 1rem; */
+        left: -5%;
     }
 
 }
@@ -772,9 +699,54 @@ button {
     .cadastro-login {
         flex-direction: column;
     }
+
+    .btn-cadastro-main {
+
+        margin-left: 13rem;
+
+    }
+
+    .btn-login-main {
+
+        margin-left: 20rem;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .btn-login-main {
+
+        margin-left: 15rem;
+
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-login-main {
+
+        margin-left: 10rem;
+
+    }
 }
 
 
+@media (max-width: 370px) {
+    .btn-cadastro-main {
+
+        margin-left: 8rem;
+
+    }
+}
+
+
+@media (max-width: 330px) {
+    .btn-login-main {
+
+        margin-left: 7rem;
+
+    }
+}
 
 .gift-card {
     margin-top: 8rem;
@@ -845,9 +817,59 @@ button {
 
     .btn-gift {
         top: 8rem;
+        left: 35%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .btn-gift {
         left: 30%;
     }
 }
+
+@media (max-width: 680px) {
+
+    .btn-gift {
+        left: 25%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .btn-gift {
+        left: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .btn-gift {
+        left: 15%;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .btn-gift {
+        left: 10%;
+    }
+}
+
+@media (max-width: 330px) {
+
+    .btn-gift {
+        left: 7%;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .btn-gift {
+        left: 5%;
+    }
+}
+
 
 
 @keyframes pulse {

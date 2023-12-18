@@ -1,0 +1,446 @@
+/* --------------Breakpoints--------------
+/* Ajustes dos spans circulares para telas menores usando media queries */
+
+
+@media screen and (max-width: 1090px) {
+    .circle span {
+        left: 300%;
+    }
+}
+
+
+@media screen and (max-width: 1030px) {
+    .circle span {
+        left: 280%;
+    }
+
+    .content {
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .circle span {
+        left: 265%;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .circle span {
+        left: 255%;
+    }
+
+}
+
+@media screen and (max-width: 890px) {
+    .circle span {
+        left: 235%;
+    }
+
+    .wrapper {
+        margin-left: -2%;
+
+    }
+
+    .wrapper i:first-child {
+        left: 13%;
+    }
+
+    .content {
+        left: -25%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .circle span {
+        left: 220%;
+    }
+
+}
+
+@media screen and (max-width: 840px) {
+    .circle span {
+        left: 210%;
+    }
+
+    .wrapper {
+        margin-left: -4%;
+
+    }
+
+    .wrapper i:last-child {
+        right: 5%;
+    }
+
+}
+
+@media screen and (max-width: 790px) {
+    .circle span {
+        left: 200%;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .circle span {
+        left: 190%;
+    }
+
+    .wrapper i {
+        font-size: 2rem;
+    }
+
+    .wrapper i:last-child {
+        right: 2%;
+    }
+
+    .content {
+        left: -30%;
+    }
+
+}
+
+/* .carousel .card .img {
+        min-height: 24.8rem;
+        max-width: 24.8rem;
+    }
+    
+    .card .img img {
+        max-width: 38rem;
+        min-height: 40rem;
+
+        .circle span {
+top: -127%;
+    height: 45rem;
+*/
+
+@media screen and (max-width: 730px) {
+
+
+    .carousel .card .img {
+        min-height: 14.8rem;
+        max-width: 14.8rem;
+    }
+
+    .card .img img {
+        max-width: 28rem;
+        min-height: 30rem;
+
+    }
+
+    .circle span {
+        top: -120%;
+        left: 182%;
+        height: 33rem;
+    }
+
+    .content {
+        left: -25%;
+    }
+
+    .content div:nth-child(1) {
+        font-size: 1.5rem;
+    }
+
+    .content div:nth-child(2) {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .circle span {
+        left: 175%;
+    }
+
+    .wrapper i:last-child {
+        right: 5%;
+    }
+
+    .content {
+        left: -30%;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .wrapper {
+        margin-left: -2%;
+
+    }
+
+    .content {
+        left: -38%;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        margin-left: 0;
+
+    }
+
+    .content {
+        left: -40%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .circle span {
+        left: 165%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .carousel .card .img {
+        min-height: 10.8rem;
+        max-width: 10.8rem;
+    }
+
+    .card .img img {
+        max-width: 24rem;
+        min-height: 26rem;
+
+    }
+
+    .circle span {
+        height: 29rem;
+    }
+
+    .content {
+        left: -42%;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+    .circle span {
+        left: 160%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .circle span {
+        left: 155%;
+    }
+
+    .content {
+        left: -52%;
+    }
+
+    .wrapper i {
+        height: 7rem;
+        width: 6rem;
+        font-size: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+    .circle span {
+        left: 130%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .circle span {
+        left: 125%;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .circle span {
+        left: 120%;
+    }
+
+    .content {
+        left: -70%;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .circle span {
+        left: 115%;
+    }
+
+    .content div:nth-child(1) {
+        font-size: 1.5rem;
+        transform: translateY(-10px);
+    }
+
+    .content div:nth-child(2) {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .circle span {
+        left: 145%;
+    }
+
+    .wrapper {
+        margin-left: 5%;
+
+    }
+
+    .wrapper i:first-child {
+        left: 8%;
+    }
+
+    .wrapper i:last-child {
+        right: -5%;
+    }
+
+    .content {
+        left: -45%;
+    }
+
+
+}
+
+@media screen and (max-width: 460px) {
+    .circle span {
+        left: 150%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .circle span {
+        left: 145%;
+    }
+
+    .content {
+        left: -55%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .circle span {
+        left: 100%;
+    }
+
+    .wrapper {
+        margin-left: -5%;
+
+    }
+
+    .wrapper i:first-child {
+        left: 2%;
+    }
+
+    .wrapper i:last-child {
+        right: -2%;
+    }
+
+    .content {
+        left: -83%;
+    }
+
+    .content div:nth-child(1) {
+        font-size: 1.7rem;
+        transform: translateY(-10px);
+    }
+
+    .content div:nth-child(2) {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+    .circle span {
+        left: 142%;
+    }
+
+    .wrapper {
+        margin-left: 15%;
+
+    }
+}
+
+@media screen and (max-width: 395px) {
+
+    .circle span {
+        left: 145%;
+    }
+
+    .wrapper {
+        margin-left: 20%;
+
+    }
+
+    .wrapper i:first-child {
+        left: 0;
+    }
+
+    .wrapper i:last-child {
+        right: -15%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .circle span {
+        left: 145%;
+    }
+
+    .wrapper {
+        margin-left: 25%;
+
+    }
+}
+
+@media screen and (max-width: 355px) {
+
+    .circle span {
+        left: 150%;
+    }
+
+    .wrapper {
+        margin-left: 30%;
+
+    }
+}
+
+@media screen and (max-width: 345px) {
+
+    .circle span {
+        left: 155%;
+    }
+
+    .wrapper {
+        margin-left: 35%;
+
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .circle span {
+        left: 145%;
+    }
+
+    .wrapper i:first-child {
+        left: -15%;
+    }
+
+    .wrapper i:last-child {
+        right: -25%;
+    }
+
+    .content {
+        left: -75%;
+    }
+}
+
+@media screen and (max-width: 315px) {
+
+    .circle span {
+        left: 140%;
+    }
+}

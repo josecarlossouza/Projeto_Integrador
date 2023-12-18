@@ -229,3 +229,34 @@ button {
 .login-cadastro a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) {
+    .wrapper-son {
+        justify-content: left;
+        margin-left: 2%;
+    }
+
+    .wrapper-son .form-box-login {
+        transition: transform .18s ease;
+        transform: translateX(0);
+
+    }
+
+    .wrapper-son.active .form-box-login {
+        transition: none;
+        transform: translateX(-250px);
+        display: none;
+    }
+
+    .wrapper-son .form-box-cadastro {
+        position: absolute;
+        transition: none;
+        transform: translateX(600px);
+    }
+
+    .wrapper-son.wrapper-son.active .form-box-cadastro {
+        transition: transform .18s ease;
+        transform: translateX(0);
+    }
+
+}

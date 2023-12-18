@@ -51,7 +51,7 @@ carousel.classList.remove("no-transition");
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
         carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-        console.log(carousel.scrollLeft);
+        // console.log(carousel.scrollLeft);
     });
 });
 
@@ -91,7 +91,7 @@ const infiniteScroll = () => {
     //Basicamente se chegar na primeira foto do inicio, ele joga o scroll para mesma foto só que na posição original dela que é perto do fim.
     //já que as 3 primeiras fotos do início foram as 3 ultima que foram copiadas para o início
     if (carousel.scrollLeft === 0) {
-        console.log("início");
+        // console.log("início");
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
         carousel.classList.remove("no-transition");
@@ -101,7 +101,7 @@ const infiniteScroll = () => {
     //já que as 3 últimas fotos, foram as 3 primeiras que foram copiadas para o final
     //O math ceil foi utilizado para arredondar o float para o inteiro
     else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        console.log("fim");
+        // console.log("fim");
         carousel.classList.add("no-transition");
         carousel.scrollLeft = carousel.offsetWidth;
         carousel.classList.remove("no-transition");

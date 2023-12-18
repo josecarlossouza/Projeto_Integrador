@@ -51,6 +51,8 @@ button {
     max-width: 100%;
 }
 
+
+
 .smoke-wrap img {
     max-width: 100%;
 }
@@ -179,4 +181,40 @@ button {
         transform: translateY(-10px) scale(1.2);
         opacity: 0;
     }
+}
+
+@media (max-width: 1100px) {
+
+    .cup img {
+        left: -10rem;
+    }
+
+    .smoke-wrap {
+        left: -85%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .cup img {
+        left: -5rem;
+    }
+
+    .smoke-wrap {
+        left: -80%;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .cup img {
+        left: 0;
+    }
+
+    .smoke-wrap {
+        left: 0;
+    }
+
 }
