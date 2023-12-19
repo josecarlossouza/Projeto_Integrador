@@ -203,7 +203,7 @@ document.getElementById("btn-enviar").addEventListener("click", () => {
     })
 
     if (validacao) {
-        alert("Funcionou");
+        alert("Enviado Com Sucesso!");
         // form.submit();
     } else {
         alert("Todos os campos precisam estar preenchidos de forma correta");
