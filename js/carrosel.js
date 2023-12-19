@@ -15,7 +15,7 @@ let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 //o tamanho total do carrosel muda de acordo com a dimensão da tela
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
-// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+
 //insere copias de acordo com o valor de cardPerView, dos ultimos cartões(img) no começo do carrossel, 
 //para o efeito do infinito.
 //O negativo no slice, pega a qtd informada a partir do ultimo elemento do array
@@ -36,7 +36,8 @@ carouselChildrens.slice(0, cardPerView).forEach(card => {
     carousel.insertAdjacentHTML("beforeend", card.outerHTML);
 });
 
-// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+
+//Arrasta o carrosel para a posição apropriada, para esconder os primeiros itens duplicados
 carousel.classList.add("no-transition");
 
 // A propriedade "scrollLeft" recebe ou atribui um valor em pixel, que faz deslizar a tela, se positivo desliza para direita, se negativo desliza para esquerda.

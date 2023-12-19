@@ -71,6 +71,18 @@ button {
     }
 }
 
+@media (max-width: 415px) {
+
+    .rodape {
+        margin-top: 1rem;
+
+    }
+
+    .flex-rodape {
+        margin-bottom: 5rem;
+    }
+}
+
 .tel {
     font-size: 2rem;
     font-weight: 600;

@@ -238,7 +238,7 @@ button {
 .form_input.errado {
     border: solid 2px red;
     background: transparent;
-    background-color: red;
+    background-color: rgba(254, 129, 14, 1);
 }
 
 .form_input.certo {
@@ -247,25 +247,6 @@ button {
 
 }
 
-
-/* #nome-input+span {
-    position: relative;
-}
-
-#nome-input+span::before {
-    content: '';
-    position: absolute;
-    top: -.8rem;
-    left: -24.6rem;
-    width: 24.3rem;
-    height: 2.2rem;
-    border: none;
-    outline: 2px solid red;
-    outline-offset: 3px;
-    outline-width: 3px;
-    animation: pulse 2s linear infinite;
-    user-select: none;
-} */
 
 
 #cel-input {
@@ -304,6 +285,31 @@ button {
     padding: 1rem 1rem;
     font-size: 1.6rem;
 
+}
+
+
+
+.last_input.errado {
+    border: solid 2px red;
+    background-color: rgba(254, 129, 14, 1);
+}
+
+.last_input.certo {
+    border: solid 2px green;
+    background-color: rgb(96, 172, 96);
+
+}
+
+.ajuda-texto-msg {
+    font-size: 2.3rem;
+    margin-left: 1rem;
+    color: red;
+    display: none;
+
+}
+
+.ajuda-texto-msg.active {
+    display: block;
 }
 
 @media (max-width: 1200px) {
@@ -345,42 +351,64 @@ button {
     span {
         font-size: 1.5rem;
     }
+
+    .ajuda-texto {
+        font-size: 1.5rem;
+    }
+
+    .ajuda-texto-msg {
+        font-size: 1.5rem;
+
+    }
 }
 
 @media (max-width: 570px) {
 
     main h1 {
         font-size: 3rem;
+        margin-left: 3rem;
     }
+
+    main img {
+        margin-left: 3rem;
+    }
+
+    main h2 {
+        margin-left: 3rem;
+    }
+
+    .form_input {
+        margin-left: 1.5rem;
+    }
+
+    .last_input {
+        margin-left: 1.3rem;
+    }
+
 
     span {
         font-size: 1rem;
     }
+
+    .ajuda-texto {
+        font-size: 1rem;
+    }
+
+    .ajuda-texto-msg {
+        font-size: 1rem;
+
+    }
+}
+
+@media (max-width: 450px) {
+    .last_input {
+        width: 35rem;
+    }
+
 }
 
 
-.last_input.errado {
-    border: solid 2px red;
-    background-color: red;
-}
 
-.last_input.certo {
-    border: solid 2px green;
-    background-color: rgb(96, 172, 96);
-
-}
-
-.ajuda-texto-msg {
-    font-size: 2.3rem;
-    margin-left: 1rem;
-    color: red;
-    display: none;
-
-}
-
-.ajuda-texto-msg.active {
-    display: block;
-}
 
 select {
     padding-top: .5rem;

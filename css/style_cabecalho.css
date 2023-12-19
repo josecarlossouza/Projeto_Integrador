@@ -273,7 +273,7 @@ header {
 
     .navbar {
         top: 100%;
-        left: -15%;
+        left: 0;
     }
 
     .icons {
@@ -291,7 +291,16 @@ header {
 
     .navbar {
         top: 100%;
-        left: -20%;
+        left: -10%;
+    }
+
+    .btn-cadastro {
+        left: 0;
+    }
+
+    .btn-login {
+
+        left: 10%;
     }
 
 }
@@ -299,7 +308,7 @@ header {
 @media (max-width: 400px) {
 
     .icons {
-        right: -35%;
+        right: 35%;
     }
 
     .navbar {
@@ -307,15 +316,22 @@ header {
     }
 
     .btn-cadastro {
-        left: 5%;
+        left: 6%;
     }
 
     .btn-login {
 
-        left: 15%;
+        left: 16%;
     }
 
 }
+
+
+/* @media (max-width: 400px) {
+
+    .icons {
+        right: -45%;
+    } */
 
 
 

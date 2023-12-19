@@ -233,7 +233,7 @@ button {
 @media (max-width: 600px) {
     .wrapper-son {
         justify-content: left;
-        margin-left: 2%;
+        margin-left: 15%;
     }
 
     .wrapper-son .form-box-login {
@@ -259,4 +259,25 @@ button {
         transform: translateX(0);
     }
 
+}
+
+@media (max-width: 450px) {
+    .wrapper-son {
+        justify-content: left;
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 420px) {
+    .wrapper-son {
+        width: 360px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper-son {
+        justify-content: left;
+        margin-left: 0%;
+    }
 }
