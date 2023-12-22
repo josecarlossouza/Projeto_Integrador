@@ -353,11 +353,11 @@ button {
     }
 
     .ajuda-texto {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .ajuda-texto-msg {
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
 }
@@ -390,6 +390,14 @@ button {
         font-size: 1rem;
     }
 
+
+}
+
+@media (max-width: 450px) {
+    .last_input {
+        width: 35rem;
+    }
+
     .ajuda-texto {
         font-size: 1rem;
     }
@@ -397,12 +405,6 @@ button {
     .ajuda-texto-msg {
         font-size: 1rem;
 
-    }
-}
-
-@media (max-width: 450px) {
-    .last_input {
-        width: 35rem;
     }
 
 }
